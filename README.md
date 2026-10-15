@@ -2,13 +2,20 @@
 
 Statična višejezična stranica: hrvatski, engleski, njemački i talijanski. Otvorite index.html ili pokrenite node server.js i posjetite http://127.0.0.1:4173.
 
+## Dizajn
+- Paleta: istarski kamen (#f2ede3), morska tinta (#10272e), terakota (#a3471f), oker (#e3b26b). Tokeni su na vrhu style.css.
+- Fontovi: Instrument Serif + Manrope, lokalno u assets/fonts (bez Google CDN-a).
+- Motiv luka (arch) u logu, faviconu i fotografijama.
+
 ## Funkcionalnosti
-- 11 lokalnih AVIF fotografija
-- Mobilni izbornik i trajni odabir jezika (localStorage; alternativno ?lang=en/de/it/hr)
-- Prijevodi sadržaja, obrasca, galerije, pristupačnih oznaka i metapodataka
-- Ulazne animacije, otkrivanje fotografija, postupni ulasci kartica i lagani parallax
+- 11 AVIF fotografija u dvije veličine (villa-N.avif 1600 px, villa-N-800.avif 800 px; hero i villa-1-2400.avif) sa srcset
+- Mobilni izbornik preko cijelog ekrana i trajni odabir jezika (localStorage; alternativno ?lang=en/de/it/hr)
+- Prijevodi sadržaja, obrasca, galerije, pristupačnih oznaka i metapodataka (translations.js, ključ je hrvatski tekst)
+- Hero fotografija koja se širi pri scrollu, otkrivanje naslova po retcima, ulasci sekcija pri scrollu
+- „Jedan dan u vili“: sticky fotografija koja prati jutro / podne / večer / noć (na mobitelu slike unutar koraka)
+- Galerija kao horizontalna traka (scroll-snap, strelice, povlačenje mišem, tipkovnica) + lightbox s tipkovnicom i swipe gestama
+- Shematski prikaz udaljenosti (nije u mjerilu, bez točne lokacije)
 - Poštivanje prefers-reduced-motion
-- Galerija s tipkovnicom i swipe gestama
 - Obrazac za upit bez kalendara: ime, e-mail, željeni termin kao tekst, broj gostiju, poruka
 
 ## E-mail — još nije povezan
